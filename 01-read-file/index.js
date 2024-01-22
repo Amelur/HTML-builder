@@ -8,6 +8,6 @@ readStream.on('data', (chunk) => {
   console.log(chunk.toString());
 });
 
-readStream.on('error', (error) => {
-  console.error(`Error reading the file: ${error.message}`);
+readStream.on('error', () => {
+  console.error('error');
 });
